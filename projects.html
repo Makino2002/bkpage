@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>BK-Home - Dự Án</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="flex-left">
+          <span>📧 contact@bk-home.com.vn</span>
+          <span>📞 090 787 11 39</span>
+        </div>
+        <div>📍 Đã có mặt tại HCM, Cần Thơ, Đồng Tháp và các tỉnh lân cận</div>
+      </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header>
+      <nav>
+        <div class="container">
+          <div class="logo">BK-HOME</div>
+          <ul class="nav-links">
+            <li><a href="index.html#home">TRANG CHỦ</a></li>
+            <li><a href="services.html">DỊCH VỤ</a></li>
+            <li><a href="projects.html" class="active">DỰ ÁN</a></li>
+            <li><a href="about.html">VỀ BK-HOME</a></li>
+            <li><a href="contact.html">LIÊN HỆ</a></li>
+            <li><a href="blog.html">TIN TỨC</a></li>
+          </ul>
+          <button id="mobileMenuBtn" class="mobile-menu" aria-label="Mở menu">
+            ☰
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Projects with filter (uses main.js to render + filter) -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2>CÁC DỰ ÁN</h2>
+        <p class="projects-subtitle">Thiết Kế Và Thi Công Bởi BK-HOME</p>
+
+        <div class="filter-buttons" id="filterButtons">
+          <button class="filter-btn active" data-filter="all">Tất cả</button>
+          <button class="filter-btn" data-filter="Biệt Thự">Biệt Thự</button>
+          <button class="filter-btn" data-filter="Nhà Phố">Nhà Phố</button>
+          <button class="filter-btn" data-filter="Khách Sạn">Khách sạn</button>
+          <button class="filter-btn" data-filter="Showroom & Coffee Shop">
+            Showroom & Coffee Shop
+          </button>
+          <button class="filter-btn" data-filter="Văn Phòng">Văn Phòng</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- JS will render project cards here (no external images — placeholders used) -->
+        </div>
+      </div>
+    </section>
+    <!-- Projects Grid -->
+    <section class="projects">
+      <div class="container">
+        <h2>Dự Án Tiêu Biểu</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="assets/images/project1.jpg" alt="Dự án 1" />
+            <div class="project-info">
+              <h3>Biệt Thự Sang Trọng</h3>
+              <p>HCM - 2024</p>
+              <a href="project-detail.html" class="btn">Xem Chi Tiết</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/images/project2.jpg" alt="Dự án 2" />
+            <div class="project-info">
+              <h3>Nhà Phố Hiện Đại</h3>
+              <p>Cần Thơ - 2023</p>
+              <a href="project-detail.html" class="btn">Xem Chi Tiết</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="assets/images/project3.jpg" alt="Dự án 3" />
+            <div class="project-info">
+              <h3>Nhà Trọn Gói Cao Cấp</h3>
+              <p>Đồng Tháp - 2022</p>
+              <a href="project-detail.html" class="btn">Xem Chi Tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (same as index) -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>VỀ BK-HOME</h3>
+            <p>
+              BK-Home là công ty hàng đầu chuyên cung cấp các dịch vụ trọn gói
+              từ tư vấn, thiết kế, thi công hoàn thiện các công trình dân dụng,
+              công nghiệp, thương mại.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>MENU</h3>
+            <a href="index.html#home">Trang Chủ</a>
+            <a href="services.html">Dịch Vụ</a>
+            <a href="projects.html">Dự Án</a>
+            <a href="contact.html">Liên Hệ</a>
+            <a href="blog.html">Tin tức</a>
+          </div>
+          <div class="footer-section">
+            <h3>THÔNG TIN LIÊN HỆ</h3>
+            <p>📞 SĐT: 090 787 11 39</p>
+            <p>📧 Email: contact@bk-home.com.vn</p>
+            <p>📍 HCM: 29 Trần Kế Xương, Phường Cầu Kiệu, TP HCM</p>
+          </div>
+          <div class="footer-section">
+            <h3>GIỜ LÀM VIỆC</h3>
+            <p>Thứ Hai - Thứ Sáu: 08:00 am - 06:00 pm</p>
+            <p>Thứ Bảy - Chủ Nhật: 09:00 am - 03:00 pm</p>
+          </div>
+        </div>
+        <div class="footer-bottom"><p>© BẢN QUYỀN THUỘC VỀ BK HOME</p></div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
